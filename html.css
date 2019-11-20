@@ -16,8 +16,8 @@ header{
     text-align: center;
     position: sticky;
     top: 0;
-    margin-block-start: 5em;
-    margin-block-end: 5em;
+    margin-top: 2em;
+    padding-bottom: 2em;
     font-family: 'Mansalva', cursive;
 }
 
@@ -98,4 +98,9 @@ footer{
 
 footer > span {
     color: rgb(71, 78, 100);
+}
+
+footer > span:not(:last-of-type)::after{
+    font-size: 1.5em;
+    content: " | ";
 }
