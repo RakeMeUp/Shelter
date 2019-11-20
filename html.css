@@ -37,6 +37,17 @@ span.inner{
     padding-right: 15%;
 }
 
+@media only screen and (max-width: 1080px){
+
+span.inner{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+    
+}
+
+
 span.inner:first-child{
     padding-top: 5%;
 }
@@ -104,3 +115,4 @@ footer > span:not(:last-of-type)::after{
     font-size: 1.5em;
     content: " | ";
 }
+
