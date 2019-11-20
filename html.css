@@ -108,7 +108,7 @@ footer > span:not(:last-of-type)::after{
     content: " | ";
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 720){
 
     span.inner{
         padding-left: 5%;
@@ -120,5 +120,10 @@ footer > span:not(:last-of-type)::after{
         max-height: 50%;
         min-width: 25%;
         min-height: 25%;
+    }
+
+    header{
+        font-size: 1,5em;
+
     }
 }
