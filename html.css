@@ -128,4 +128,7 @@ footer > span:not(:last-of-type)::after{
         padding-bottom: 0.5em;
     }
 
+    div.TL_header{
+        padding-left: 5%;
+    }
 }
