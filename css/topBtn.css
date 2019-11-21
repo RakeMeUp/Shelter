@@ -1,0 +1,30 @@
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2em; /* Place the button at the bottom of the page */
+    right: 2em; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(169, 169, 169, 0.5); /* Set a background color */
+    
+    color: lightgray; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1em; /* Some padding */
+    border-radius: 30%; /* Rounded corners */
+    font-size: 1.5em; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media only screen and (orientation: portrait){
+
+  #topBtn{
+  font-size: 4em;
+  padding: 0.75em;
+  right: 1em;
+  bottom: 1em;
+  }
+}

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="html.css"></link>
+      <link rel="stylesheet" href="css/html.css"></link>
+      <link rel="stylesheet" href="css/topBtn.css"></link>
       <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" ></link>
       <link href="https://fonts.googleapis.com/css?family=Mansalva" rel="stylesheet"></link>
       <script src="js/scrollFunction.js"></script>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">&#9650;</button>
+
+
+      
     </head>
     
 
@@ -16,19 +21,20 @@
                 <img class="logo" src="images/racclogowhite.png" /> <span><span>S</span>helter Interactive</span>
             </h1>
         </span>
+
   </header>
 
 
   <body>
       <div class="topnav">
-          <a class="active" href="#home">Home</a>
+          <a class="active" href="index.html">Home</a>
           <a href="#news">Blog</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
-          <div>
+          <div class="img">
               <img title="Facebook" src="images/Facebook.png" onmouseover="this.src='images/FacebookG.png'" onmouseout="this.src='images/Facebook.png'" width="30px" height="30px" />
           </div>
-          <div>
+          <div class="img">
               <img title="Twitter" src="images/Twitter.png" onmouseover="this.src='images/TwitterG.png'" onmouseout="this.src='images/Twitter.png'" width="30px" height="30px" />
           </div>
           <div id="mail">Email:<br>Lorem@Ipsum.com</div>
@@ -74,6 +80,21 @@
 
 
    <footer>
+     <div class="footerContacts">
+        <div id="footermail">
+          <span>Email:<br></span>
+          <span>Lorem@Ipsum.com</span>
+        </div>
+        <div class="footerimg">
+          <div class="img">
+              <img title="Facebook" src="images/Facebook.png" onmouseover="this.src='images/FacebookG.png'" onmouseout="this.src='images/Facebook.png'" width="30px" height="30px" />
+          </div>
+          <div class="img">
+              <img title="Twitter" src="images/Twitter.png" onmouseover="this.src='images/TwitterG.png'" onmouseout="this.src='images/Twitter.png'" width="30px" height="30px" />
+          </div>
+        </div>
+    </div>
+    
        <span>Shelter Interactive ©</span>
        <span>By my own fucking hand and patience</span>
        <span>Like holy fuck, this shit is hard to do</span>

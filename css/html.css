@@ -17,7 +17,7 @@ header{
     position: sticky;
     top: 0;
     margin-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     font-family: 'Mansalva', cursive;
 }
 
@@ -25,7 +25,7 @@ header{
 .topnav {
     position: relative;
     top: -40px;
-    background-color: rgb(25, 35, 45);
+    background-color: rgba(25, 35, 45);
     overflow: hidden;
   }
   
@@ -76,9 +76,12 @@ header{
 
 body{
     width: 100%;
-    margin: 0;
     background-color: rgb(36, 45, 54);
     text-align: justify;
+    margin-bottom: 200px;
+    z-index: 1;
+    margin-left: 0;
+    margin-right: 0;    
 }
 
 span.inner{
@@ -90,8 +93,9 @@ span.inner{
     padding-right: 15%;
 }
 
-
-
+.LN {
+    background-color: white;
+}
 
 span.inner:first-child{
     padding-top: 5%;
@@ -105,7 +109,7 @@ div.TL_header{
     font-weight: bold;
     font-style: italic;
     padding-left: 15%;
-    padding-top: 3em;
+    padding-top: 1.5em;
     padding-bottom: 1em;
     display: block;
     font-size: 3em;
@@ -150,12 +154,15 @@ h1 > span {
 }
 
 footer{
+    z-index: -1;
+    position: fixed;
+    left: 50%;
+    margin-left: -414px;   
+    bottom: 10px;
     padding-top: 4em;
     font-size: 0.75em;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: justify;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    background-color: rgb(25, 35, 45);
 }
 
 footer > span {
@@ -165,6 +172,33 @@ footer > span {
 footer > span:not(:last-of-type)::after{
     font-size: 1.5em;
     content: " | ";
+}
+
+.footerContacts{
+    text-align: center;
+}
+
+#footermail{
+    padding-bottom: 2em;
+}
+
+#footermail span:first-of-type {
+ color: rgb(71, 78, 100);
+}
+#footermail span:last-of-type{
+    font-size: 1.5em;
+}
+
+div.footerimg > div.img{
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    display: inline-block;
+}
+
+.footerimg > .img > img {
+    height: 70px;
+    width: 70px;
 }
 
 @media only screen and (orientation: portrait){
@@ -193,5 +227,13 @@ footer > span:not(:last-of-type)::after{
 
     .topnav a{
         font-size: 2em;
+    }
+    .img img {
+        width: 70px;
+        height: 70px;
+
+    }
+    #mail {
+        display: none;
     }
 }
