@@ -19,6 +19,7 @@ header{
     margin-top: 2em;
     padding-bottom: 3em;
     font-family: 'Mansalva', cursive;
+    letter-spacing: 0.5em;
 }
 
 /* Add a black background color to the top navigation */
@@ -109,8 +110,8 @@ div.TL_header{
     font-weight: bold;
     font-style: italic;
     padding-left: 15%;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     display: block;
     font-size: 3em;
 }
@@ -129,9 +130,10 @@ img.inner{
 }
 
 img.logo {
-    float: center;
-    max-width: 2em;
-    max-height: 2em;
+    position: relative;
+    top: 10px;
+    max-width: 3em;
+    max-height: 3em;
 }
 
 
@@ -203,6 +205,13 @@ div.footerimg > div.img{
 
 @media only screen and (orientation: portrait){
 
+    img.logo {
+        position: relative;
+        top: 10px;
+        max-width: 3em;
+        max-height: 3em;
+    }
+
     span.LN > div.TL > span.inner{
         padding-left: 5%;
         padding-right: 5%;
@@ -217,8 +226,9 @@ div.footerimg > div.img{
 
     header{
         margin-top:0;
-        font-size: 1.7em;
+        font-size: 1.3em;
         padding-bottom: 0.5em;
+        letter-spacing: 0.3em;
     }
 
     div.TL_header{
