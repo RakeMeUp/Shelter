@@ -1,0 +1,185 @@
+@import "variables.scss";
+
+html{
+    color: $lightgraytext;
+    background-color:$backgroundColor;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+    /*Noise filter*/
+    background-image: $background-image-dark;
+
+    #SiteLogo{
+        position: relative;
+        bottom: 20px;
+        max-height: 20vh;
+        max-width: 10vw;
+        padding-right: 50px;
+    }
+
+    span{
+        font-size: 4.5vw;
+        font-family: 'Mansalva', cursive;
+        word-spacing: 20px ;
+            
+
+            &:first-of-type{
+                font-size: 7vw;
+                position: relative;
+                bottom: 10px;
+            }
+    }
+    
+}
+
+body{
+    margin: 0;
+    /*Noise filter*/
+    background-image: $background-image-light;
+    
+    .topnavContainer {
+        display: flex;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.5);
+        .topnavBtns{
+            display: flex;
+            flex: 1;
+            background-image: $background-image-dark;
+
+            a{
+                font-size: 1.2em;
+                align-self: flex-end;
+                color: $lightgraytext;
+                text-decoration: none;
+                padding: 10px;
+                margin-right: 10px;
+                border-top-right-radius: 12px;
+
+                &:hover{
+                    background-image: $background-image-light;
+                }
+
+                &:not(:first-of-type){
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+            }
+            
+            .active{
+                background-image: $background-image-light;
+            }
+        }
+
+        .ContactContainer{
+            background-image: $background-image-dark;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            padding-right: 20px;
+
+            div, img{
+                padding-left: 10px;
+                text-align: center;
+                font-size: 0.8em;
+                
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+            }
+
+            
+        }
+    }  
+
+    .TimeLineContainer{
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 100px;
+        margin-bottom: 235px;
+        
+        .TimeLineHeader{
+            padding-bottom: 50px;
+            font-size: 4em;
+            font-style: italic;
+        }
+    
+        .TimeLineContent{
+            text-align: justify;
+            padding-bottom: 80px;
+
+            span{
+                display: block;
+                font-size: 1.1em;
+                text-indent: 3em;
+                padding-bottom: 1em;
+            }
+        }
+    }
+}
+
+footer{
+    background-image: $background-image-dark;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+
+    .FooterContactsContainer{
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        
+        .FooterMail{
+            text-align: center;
+            padding-bottom: 20px;
+
+            span{
+                font-size: 0.8em;
+
+                &:first-of-type{
+                    color: $darkgraytext;
+                }
+            }
+        }
+
+        .FooterImgContainer{
+            display: flex;
+            padding-bottom: 30px;
+
+            img{
+                width: 70px;
+                height: 70px;
+
+                &:first-of-type{
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .FooterTextContainer{
+        text-align: center;
+        font-size: 0.8em;
+        padding-bottom: 20px;
+
+        span{
+            padding-right: 2em;
+            color: $darkgraytext;
+            a{
+                color: $darkgraytext;
+            }
+        }
+    }
+}
