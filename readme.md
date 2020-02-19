@@ -2,15 +2,14 @@
 
 This is just some practice site im doing right now, it aint perfect but hey, neither am i or u.
 
-# [**Az oldal**](https://shelterinteractive.netlify.com/#news)
+# [**The site itself is here**](https://shelterinteractive.netlify.com/#news)
 
-## First version was like this
+*First version was like this*
 
 ![alt text](MdImages/Site_first_v.jpg "First design was ass, tbh")
 
----
 
-## Now it looks like this
+*Now it looks like this*
 
 
 

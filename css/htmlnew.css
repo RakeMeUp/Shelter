@@ -121,6 +121,7 @@ body .TimeLineContainer {
   padding-left: 10%;
   padding-top: 100px;
   margin-bottom: 235px;
+  min-height: 200px;
 }
 
 body .TimeLineContainer .TimeLineHeader {
